@@ -5,6 +5,8 @@
 	</head>
 		
 	<body>			<!-- Here inside the <body> and </body> tag, the main part of the webpage goes in. -->
+	
+	
 		<h1>Sahil Islam</h1>	<!-- Heading -->
 		<hr />	 <!-- Adding a long horizontal line 'here'. -->
 		<p>Paragraph1: I'm trying to learn html. <br> Hope this goes well.</p> 	<!-- <br> does new line-->
@@ -38,6 +40,14 @@
 		
 		<img src="Me.png" width="200" alt="My photo"/>
 		<img src="Me.bmp" width="100"/ alt="My photo painted">				<!-- This is how images are added -->
+		
+		
+		<h3> Title and alt atrribute </h3>
+		
+		<img src="Me.bmp" width="200" height="200" title="Sahil" alt="Sahil's photo" > <br> 	<!--If we take our mouse to the photo, it will show whatever written in the title atrribute.-->
+		
+		<img src="Me1.bmp" width="200" height="200" title="Sahil" alt="Sahil's photo" > <br>	<!-- If for any resaon the image does not load, the text in alt atrribute will show up.--> 
+		
 		
 		<hr/>
 		
@@ -81,7 +91,7 @@
 			
 			
 		<!-- Creating link outside thi page -->	
-		To see my github account <a href="https://github.com/TheSahilGit/">click here.</a>		<!-- <a></a>  is anchor eliment; 'href' is a attribute.-->
+		To see my github account <a href="https://github.com/TheSahilGit/">click here.</a>		<!-- <a></a>  is anchor element; 'href' is a attribute.-->
 		
 		
 		
@@ -149,11 +159,211 @@
 		<br>
 		<br>
 		<br>
+		<br>
 	
 		<p> <a name="Jerry"> This is a photo of jerry.. </a> </p>
 		<img src="jerry.png" width="300" height="300" alt="Jerry"/>
 		
+		<hr>
 		
+		<h2> Creating a one line text input box: </h2>
+		<!-- The Syntax is: -->
+		<form action="" method="">			<!-- To create text input we need to put in inside <form></form> -->
+			<input type="text" name="">		<!-- type="" states the type of input: text, radio(mouse click) etc. -->
+			<br>
+			<br>
+			<input type="text" name="" size= "50">		
+		</form>
+		
+		&nbsp;&nbsp <h3> Adding label to input box: </h3>
+		
+		<form action="" method="">
+			<label for="firstname">First Name: </label>			<!-- This is how we add labels to the text inputs. -->
+				<input type="text" id="firstname" name="">
+			<br>
+			<br>
+			<label for="lastname">Last Name: </label>
+				<input type="text" id="lastname" name="">		
+		</form>
+		
+		<h2> Creating a multiple line text input box <h2>
+		
+		<form action="" method="">
+			<textarea rows="10" cols="50"></textarea>	
+		</form>
+		
+		<!-- To get a submit button -->
+		<form action="" method="">
+			<textarea rows="10" cols="100"></textarea><br>
+			<input type="submit" value="Submit"> 
+			<input type="submit" value="Refresh"> 
+		</form>
+		
+		
+		
+		<h4> Radio Buttons: <h4>
+		
+		<form action="" method="">
+			Yes:
+			<input type= "radio" name="yesno" value="">			<!-- Here the attribute 'name' is important -->
+			No:													<!-- If the names are same in these two cases, we will be able to select any one of them -->
+			<input type="radio" name="yesno" value="">			<!-- If they are different, we can select both of them. -->
+		</form>
+		
+		
+		
+		<h4> Checkbox: <h4>
+		<form action="" method="">
+			Select any one of them: <br>
+			<input type="checkbox" name="">Tom <br>
+			<input type= "checkbox" name="">Jerry <br>
+			<input type="checkbox" name=""> Dog <br>
+			<input type="checkbox" name=""> Bird <br>
+			<input type="checkbox" name="" checked="checked"> Bird <br>  <!-- If we add this 'checked' attribute this way, when the page loads fist time, this will be automatically checked -->			
+		</form>
+		
+		
+		<fieldset>				<!-- This adds box whereever I start and end this. -->
+		
+			<legend>This is the legened I put in.</legend>    <!--This puts the something in the fieldbox line. -->
+			
+			<h4> 'Number input only' box <h4>
+			<form action="" method ="" >
+				Age: <input type="number"> years <br>
+				Teenage: <input type="number" min="13"  max="19" >
+			</form>
+			
+			<h4> Drop down menu <h4> 
+			
+			<form action="" method="">
+				<select>
+					<option value="tom" >Tom</option>
+					<option value="jerry" >Jerry</option>
+					<option value="bird" >Bird</option>
+					<option value="dog" >Dog</option>
+				</select>
+			</form>
+			
+			<h4> Picking a date <h4> 
+			<form action="" method ="" >
+				Date of birth: <input type="date" name= "day">  <br>		
+			</form>
+		
+		</fieldset>
+		
+		
+		<h1> Attributes </h1>
+		
+		<p class="test"> Hey there </p>		<!-- Atrribute alway go in the opening tag i.e. inside <p> here. Not in </p> -->
+		
+		<label for="name">Sahil</label>		<!-- Here 'class', 'for' are the attribute -->
+		
+		
+		<h1> Meta Tags </h1>
+		
+		Meta tags are not visible in the web page. But they have some important uages which we'll learn later.
+		
+		<meta name="description" content="This is a webpage about something" /> 		<!--This is how we write meta tags. -->
+		
+		These 'name' and 'content' attributes helps the search engine find the webpage and how the decription below the search. 
+		
+		<meta name="keyword" content="Tom, Jerry" />   <!--These are the keyword which helps to search.-->
+		
+		<meta http-equiv="author" content= "Sahil Islam" />
+		
+		<meta http-equiv= "content-language" content="en-us" />
+		
+		<hr>
+		
+		<h2> Whitespace and escape characters </h2>
+		
+		<table>
+			<tr>
+				<th>What to do</th>
+				<th>Code</th>
+			</tr>
+			
+			<tr>
+				<td>space</td>
+				<td> & nbsp  </td>
+				
+			</tr>
+			
+			<tr>
+				<td>Copyright(&copy)</td>
+				<td> & copy	</td>
+				
+			</tr>
+			
+			<tr>
+				<td>Trademark(&#8482)</td>
+				<td> & # 8482  </td>
+				
+			</tr>
+			
+			<tr>
+				<td> &gt </td>
+				<td> & gt  </td>
+				
+			</tr>
+			
+			<tr>
+				<td> ? </td>
+				<td> & #63  </td>
+				
+			</tr>
+			
+		</table>
+		
+		<hr>
+		
+		<h2> Bold & Italic Element </h2>
+		
+		I will write my name in <b> bold element </b>, but will write surname in <strong> strong element </strong>. <br>
+		<b> Sahil </b>  <br>
+		<strong> Islam </strong> <br>
+		Bold and strong element  are visually same, but has some basic differences. <br>
+		
+		Again I'll write the name in <i> italic </i> and surname in <em>em</em> element. <br>
+		<i> Sahil </i> <br>
+		<em> Islam </em>
+		
+		<hr>
+		
+		<h2> iframe element </h2>
+		
+		<hr>
+		
+		<h3> Supercript and ubcript element. </h3>
+		Water is H<sub>2</sub>O. <br>
+		Today is June 14<sup>th</sup>,2020. 
+		
+		<hr>
+		
+		<h2> Audio element </h2>
+		<!-- Standard audio formats are .mp3, .ogg and .wav -->
+		
+		<audio controls>
+			<source src = "tick.mp3" />
+		</audio>
+		
+		<br> loop-- &gt <br>
+		
+		<audio controls autoplay loop>
+			<source src = "tick.mp3" />
+		</audio>
+		
+		<h2> Video Element </h2>
+		
+		<video width="640" height= "360" controls>
+			<source src = "sample.mp4" />
+		</video>
+		
+		<hr>
+		
+		<h2>What is 'DOCKTYPE' ?? </h2>
+		
+		The doctype declaration states the browser about what kind of document we are going to put next .
 		
 	</body>
 </html>
