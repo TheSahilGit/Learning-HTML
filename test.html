@@ -1,7 +1,60 @@
 <!DOCTYPE html> 	<!-- Stating what kind of webpage it i going to be. Here it i html-->
 <html> 				<!-- Everything hould be inside this <html> and </html> section. -->
-	<head>			<!-- This is the heading or we may say this will be the name of the pge which will be shown on the tab opened in the browser -->
+	<head>			<!-- This is the heading or we may say this will be the name of the page which will be shown on the tab opened in the browser -->
 		<title>Learning HTML</title>
+		
+		<style>
+		
+			body{
+			color:black;		<!--Changes the color of the whole body-->
+			}
+			
+		
+			h1 {	
+			
+			background-color:skyblue;  <!--Adds background color to all the <h1></h1> elements there.-->
+			}
+			
+			h2{
+			
+			background-color:pink;
+			border: 3px solid black;	<!-- If we don't mention the bottom thing it adds a box around the text -->
+			}
+			
+			p.red{
+			color: red;					<!--This changes font color to all the <p></p> elements globally-->
+			font-size: 25px;			<!-- Changes the font ize-->
+			font-family: Kalpurush; 	<!--Changes the font -->
+			}
+			
+			p.blue{
+			color: blue;					<!--We used class here to change the color seperately.-->
+			font-size: 25px;			<!-- Changes the font ize-->
+			font-family: Kalpurush; 	<!--Changes the font -->
+			}
+			
+			h3{
+			
+			border-bottom: 1px solid black; <!--This adds a line below the text mentioned i.e. <h3> here. -->
+			
+			}
+			
+			.blue{
+			color:blue;
+			font-size:20px;		
+			font-family:Chiller;
+			}
+			<!--This is global class defining-->
+			<!-- ANything having this clas name "blue" will have thoe properties.-->
+			
+			.underline{
+			text-decoration: underline;
+			}
+			
+			
+			
+		</style>
+		
 	</head>
 		
 	<body>			<!-- Here inside the <body> and </body> tag, the main part of the webpage goes in. -->
@@ -9,11 +62,15 @@
 	
 		<h1>Sahil Islam</h1>	<!-- Heading -->
 		<hr />	 <!-- Adding a long horizontal line 'here'. -->
-		<p>Paragraph1: I'm trying to learn html. <br> Hope this goes well.</p> 	<!-- <br> does new line-->
+		<p class="red">Paragraph1: I'm trying to learn html. <br> Hope this goes well.</p> 	<!-- <br> does new line--> 
 		
-		<p>Paragraph2: This is another paragraph</p>	<!-- <p>__</p> stands for paragraph-->
+		<p class="blue">Paragraph2: This is another paragraph</p>	<!-- <p>__</p> stands for paragraph-->
 		
+		<!--If we ignore the class it will take a default style. We a classs to control the tyle indiviually. Clss name can be anything. Best be relevant to the job it does. -->
 		
+		<blockquote class="blue underline">
+			Blockquote adds an indent.
+		</blockquote>
 		
 		
 		<ul>					<!-- <ul> means 'unordered list';  Adds bullets -->
@@ -158,6 +215,8 @@
 		<br>
 		<br>
 		<br>
+		<br>
+		<br>
 	
 		<p> <a name="Jerry"> This is a photo of jerry.. </a> </p>
 		<img src="jerry.png" width="300" height="300" alt="Jerry"/>
@@ -184,7 +243,7 @@
 				<input type="text" id="lastname" name="">		
 		</form>
 		
-		<h2> Creating a multiple line text input box <h2>
+		<h2> Creating a multiple line text input box </h2>
 		
 		<form action="" method="">
 			<textarea rows="10" cols="50"></textarea>	
