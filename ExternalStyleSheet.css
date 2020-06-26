@@ -1,46 +1,58 @@
+
+
 body{
-color:black;		<!--Changes the color of the whole body-->
+color:black;		
 }
 
 
-h1 {
+h1 {	
 
-background-color:skyblue;  <!--Adds background color to all the <h1></h1> elements there.-->
+    background-color:skyblue;  
+
 }
-
+    
 h2{
 
-background-color:pink;
-border: 3px solid black;	<!-- If we don't mention the bottom thing it adds a box around the text -->
+    background-color:rgb(218, 90, 111);
+    border: 3px solid black;	
 }
 
 p.red{
-color: red;					<!--This changes font color to all the <p></p> elements globally-->
-font-size: 25px;			<!-- Changes the font ize-->
-font-family: Kalpurush; 	<!--Changes the font -->
+color: red;					
+font-size: 25px;			
+font-family: Kalpurush; 	
 }
 
 p.blue{
-color: blue;					<!--We used class here to change the color seperately.-->
-font-size: 25px;			<!-- Changes the font ize-->
-font-family: Kalpurush; 	<!--Changes the font -->
+color: blue;					
+font-size: 25px;			
+font-family: Kalpurush; 	
 }
 
 h3{
 
-border-bottom: 1px solid black; <!--This adds a line below the text mentioned i.e. <h3> here. -->
+    border-bottom: 1px solid black;
 
+    
+}
+
+.bluechiller{
+    color:blue;
+    font-size:20px;		
+    font-family:Chiller;
 }
 
 .blue{
-color:blue;
-font-size:20px;
-font-family:Chiller;
-font-weight:bolder;  <!-- Other font weights are 'lighter', 'normal', 'bold' etc. -->
+    color:blue;
+
 }
-<!--This is global class defining-->
-<!-- Anything having this class name "blue" will have the properties.-->
+
+
 
 .underline{
-text-decoration: underline;
+    text-decoration: underline;
+}
+
+.italic{
+    font-style: italic;
 }
