@@ -1,0 +1,58 @@
+
+
+body{
+color:black;		
+}
+
+
+h1 {	
+
+    background-color:skyblue;  
+
+}
+    
+h2{
+
+    background-color:rgb(218, 90, 111);
+    border: 3px solid black;	
+}
+
+p.red{
+color: red;					
+font-size: 25px;			
+font-family: Kalpurush; 	
+}
+
+p.blue{
+color: blue;					
+font-size: 25px;			
+font-family: Kalpurush; 	
+}
+
+h3{
+
+    border-bottom: 1px solid black;
+
+    
+}
+
+.bluechiller{
+    color:blue;
+    font-size:20px;		
+    font-family:Chiller;
+}
+
+.blue{
+    color:blue;
+
+}
+
+
+
+.underline{
+    text-decoration: underline;
+}
+
+.italic{
+    font-style: italic;
+}
